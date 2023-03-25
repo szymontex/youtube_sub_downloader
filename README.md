@@ -20,5 +20,12 @@ You also need to specify youtube channel id
 just google some tool and use one
 
 
-To download libraries, type in your python console:
+To download libraries, type in your terminal:
+
 <code>pip install google-auth google-auth-httplib2 google-api-python-client youtube_transcript_api</code>
+
+
+
+Script will create folders with channel name and TXT files with subtitles without timings, just text. 
+Perfect for grasping a lot of knowledge and then parsing it thru some AI to extract most useful information. 
+
