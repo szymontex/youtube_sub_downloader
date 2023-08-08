@@ -1,31 +1,40 @@
-# youtube_sub_downloader
-Download all available subs from all videos from particular yt channel
+# YouTube Subtitles Downloader
 
+Download all available subtitles from any specified YouTube channel with ease.
 
-==============================================
+## Overview
 
-Python script that can download all subtitles from youtube channel you specify. 
+This Python script automates the process of downloading all subtitles from a specific YouTube channel. Perfect for amassing a wealth of knowledge and then processing it through AI to extract the most valuable information.
 
-You need to specify API_KEY inside '' brackets 
-You can get one by creating a google app yourself. 
+## Prerequisites
 
-create new project in your google cloud console
-https://console.cloud.google.com
-Then enable YouTube Data API v3 interface for your project
-Create API credentials, copy one, and paste inside script.
+- **Python**: Ensure you have Python installed on your machine.
+- **Google Cloud API Key**: Create a new project on your [Google Cloud Console](https://console.cloud.google.com). Next, enable the YouTube Data API v3 for your project. Finally, create API credentials and use the provided key in the script.
 
+## Setup and Configuration
 
+1. **Install Required Libraries**: Before running the script, make sure to install the necessary Python libraries:
 
-You also need to specify youtube channel id
-just google some tool and use one
+    ```bash
+    pip install google-auth google-auth-httplib2 google-api-python-client youtube_transcript_api
+    ```
 
+2. **Configuration**: Open the `youtube_sub_downloader.py` script and:
 
-To download libraries, type in your terminal:
+    - Set `API_KEY` to your Google Cloud API key.
+    - Specify the `CHANNEL_ID` for the YouTube channel you want to download subtitles from.
 
-<code>pip install google-auth google-auth-httplib2 google-api-python-client youtube_transcript_api</code>
+## How to Use
 
+1. **Run the Script**: Execute the `youtube_sub_downloader.py` script:
 
+    ```bash
+    python youtube_sub_downloader.py
+    ```
 
-Script will create folders with channel name and TXT files with subtitles without timings, just text. 
-Perfect for grasping a lot of knowledge and then parsing it thru some AI to extract most useful information. 
+2. **Check Downloaded Files**: The script will create folders named after the channel and store `.txt` files inside them. These files contain the subtitles without timings, just the raw text.
+
+## ⚠️ Caution
+
+Ensure you understand YouTube's terms of service and any applicable usage limits for the API. Make sure you have the necessary permissions to download content from the specified channels.
 
